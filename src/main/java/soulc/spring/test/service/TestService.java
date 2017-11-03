@@ -19,11 +19,11 @@ public class TestService {
     private StudentRepo studentRepo;
 
     /**
-     * 添加一个
+     * 添加一个&修改一个
      * @param student
      * @return
      */
-    public Student addOneStu(Student student){
+    public Student addAndUpdateOne(Student student){
         return studentRepo.save(student);
     }
 

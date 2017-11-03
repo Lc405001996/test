@@ -34,13 +34,13 @@ public class TestControl {
     }
 
     /**
-     * 添加一个
+     * 添加一个&修改一个
      * @param student
      * @return
      */
     @PostMapping(value = "/addOne")
-    public Result addOneStu(Student student){
-        return ResultUtil.success("link",testService.addOneStu(student));
+    public Result addAndUpdateOne(Student student){
+        return ResultUtil.success("link", testService.addAndUpdateOne(student));
     }
 
     /**
@@ -49,6 +49,6 @@ public class TestControl {
      */
     @GetMapping(value = "/findAllById")
     public Result findAllById(){
-        return ResultUtil.success("link",testService.findAllById());
+        return ResultUtil.success("link", testService.findAllById());
     }
 }
